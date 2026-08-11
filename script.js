@@ -4,6 +4,7 @@ const clearBtn = document.getElementById("clear-btn");
 
 let firstValue = 0;
 let awaitingNextValue = false;
+let operatorValue = "";
 
 function addNumberValue(number) {
   if (awaitingNextValue) {
@@ -16,8 +17,26 @@ function addNumberValue(number) {
   }
 }
 
+const calculate = {
+  "/": (firstNumber, secondNumber) => firstNumber / secondNumber,
+  "*": (firstNumber, secondNumber) => firstNumber * secondNumber,
+  "+": (firstNumber, secondNumber) => firstNumber + secondNumber,
+  "-": (firstNumber, secondNumber) => firstNumber - secondNumber,
+  "=": (firstNumber, secondNumber) => secondNumber,
+};
+
+function useOperator(operator) {
+  const currentValue = Number(calculatorDisplay.textContent);
+  if (operatorValue) {
+    operatorValue = operator;
+  }
+  console.log(operator);
+}
+
 inputBtns.forEach((inputBtn) => {
   if (inputBtn.classList.length === 0) {
     inputBtn.addEventListener("click", () => addNumberValue(inputBtn.value));
+  } else if (inputBtn.classList.contains("operator")) {
+    inputBtn.addEventListener("click", () => useOperator(inputBtn.value));
   }
 });
