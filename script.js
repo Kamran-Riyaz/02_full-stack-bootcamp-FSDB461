@@ -30,7 +30,7 @@ function useOperator(operator) {
   if (operatorValue) {
     operatorValue = operator;
   }
-  console.log(operator);
+  awaitingNextValue = true;
 }
 
 inputBtns.forEach((inputBtn) => {
