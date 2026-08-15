@@ -18,7 +18,8 @@ function addNumberValue(number) {
 }
 
 const calculate = {
-  "/": (firstNumber, secondNumber) => secondNumber === 0 ? "Error" : firstNumber / secondNumber,
+  "/": (firstNumber, secondNumber) =>
+    secondNumber === 0 ? "Error" : firstNumber / secondNumber,
   "*": (firstNumber, secondNumber) => firstNumber * secondNumber,
   "+": (firstNumber, secondNumber) => firstNumber + secondNumber,
   "-": (firstNumber, secondNumber) => firstNumber - secondNumber,
