@@ -11,6 +11,8 @@ A functional web-based calculator built with HTML, CSS, and vanilla JavaScript.
 - Clear/reset functionality
 - Error handling for division by zero
 
+![Calculator Screenshot](ss.png)
+
 ## Getting Started
 
 Open `index.html` in your browser.
