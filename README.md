@@ -13,6 +13,10 @@ A functional web-based calculator built with HTML, CSS, and vanilla JavaScript.
 
 ![Calculator Screenshot](ss.png)
 
+## Live Demo
+
+[https://kamran-riyaz.github.io/02_full-stack-bootcamp-FSDB461/](https://kamran-riyaz.github.io/02_full-stack-bootcamp-FSDB461/)
+
 ## Getting Started
 
 Open `index.html` in your browser.
